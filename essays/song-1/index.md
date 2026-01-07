@@ -20,7 +20,7 @@ tags:
 # A Page for Group 1's Song
 This template shows a basic essay with a few images, captions, and section headings. The design difficulty of this template is 'Seedling' level.
 
-Most of the text is just dummy text to keep the focus on the page elements.
+Most of the text is just dummy text to keep the focus on the page elementss.
 
 
 ## Second heading
