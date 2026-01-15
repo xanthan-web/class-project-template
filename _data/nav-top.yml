@@ -1,0 +1,8 @@
+- title: "About"
+  url: "/about"
+- title: "Essays"
+  url: "/scrollstories"
+- title: "Instructions"
+  url: "/instructions"
+- title: "Docs"
+  url: "/docs"
