@@ -12,21 +12,23 @@ Every food has a story. Most have a thousand years of evolution. Nachos? Born in
 
 ## The Origin Myth
 
-{% include images/figure.html
-class="right"
-width="50%"
-caption="Piedras Negras sits just across the river from Eagle Pass, Texas. A strategic location for food invention."
-image-path="images/figure_1.jpg"
-%}
-
+{% capture nachos_origin_text %}
 The year was 1943. The location: the Victory Club (also called Nacho's Restaurant), in Piedras Negras, Mexico, just across the Río Grande from Eagle Pass, Texas. A group of military wives from the nearby base—hungry, adventurous, probably tired of official dining—wandered into the restaurant after it had technically closed for the evening.
 
 Rather than turn them away, the owner (Ignacio "Nacho" Anaya) improvised. He took the kitchen's remaining ingredients: tortilla chips, melted cheese, sliced jalapeños—and created something entirely new.
 
 The dish was named after its creator: *los nachos de Ignacio* became simply *nachos*.
+{% endcapture %}
 
-{% include typography/aside.html class="left" text="
-\"The wives loved them. Word spread. Soldiers stationed at the base became regulars. And a snack was born not from tradition, but from hospitality and improvisation.\"" %}
+{% include images/figure-wrap.html
+  image-path="images/figure_1.jpg"
+  image-position="right"
+  image-width="50%"
+  caption="Piedras Negras sits just across the river from Eagle Pass, Texas. A strategic location for food invention."
+  text=nachos_origin_text
+%}
+
+{% include typography/pullquote.html text="\"The wives loved them. Word spread. Soldiers stationed at the base became regulars. And a snack was born not from tradition, but from hospitality and improvisation.\"" %}
 
 But here's where it gets complicated: nearly every element of this story has been questioned, refined, disputed, and occasionally reinvented by food historians. Was it really 1943? Was Ignacio Anaya the true creator, or one of several innovators working in the same border region? Did it matter?
 
@@ -52,24 +54,26 @@ Each is authentic to some version of nacho-dom. None is wrong. All are right.
 
 ## From Café to Stadium to Home
 
-{% include images/figure.html
-class="left"
-width="45%"
-caption="Nachos at the ballpark: the moment when a border café specialty became an American institution."
-image-path="images/carousel_1.jpg"
-%}
-
+{% capture nachos_spread_text %}
 The path from invention to ubiquity was surprisingly quick. By the 1960s, nachos appeared at sporting events. By the 1970s, they were in movie theaters. By the 1980s, they were a Super Bowl staple. By the 1990s, every Mexican restaurant had them. By the 2000s, teenagers were making them in dorm rooms and kitchens everywhere.
 
 What's remarkable about nachos is that they *scale*. You can make them for two people. You can make them for a crowd. You can make them fancy. You can make them with whatever is in the fridge. This scalability—this democratic quality—is why nachos became universal where other regional specialties remained regional.
 
 Salsa stayed Southwestern. Gumbo stayed Southern. Lobster rolls stayed coastal. But nachos? Nachos went everywhere.
+{% endcapture %}
+
+{% include images/figure-wrap.html
+  image-path="images/carousel_1.jpg"
+  image-position="left"
+  image-width="45%"
+  caption="Nachos at the ballpark: the moment when a border café specialty became an American institution."
+  text=nachos_spread_text
+%}
 
 
 ## The Sociology of Sharing
 
-{% include typography/aside.html class="right" text="
-\"A plate of nachos is a shared experience. You don't order nachos for yourself alone (or if you do, you feel vaguely foolish). Nachos are inherently social, inherently communal.\"" %}
+{% include typography/pullquote.html text="\"A plate of nachos is a shared experience. You don't order nachos for yourself alone (or if you do, you feel vaguely foolish). Nachos are inherently social, inherently communal.\"" %}
 
 There's something in the structure of nachos—the individual pieces, the shared plate, the need to reach and grab—that makes them fundamentally *social*. You cannot eat nachos in isolation. You cannot eat nachos formally. Nachos demand casualness, conviviality, the awkward reaching-over-each-other-for-the-good-pieces that defines friends eating together.
 
@@ -78,7 +82,7 @@ This is not accident. This is geometry and physics as social design.
 
 ## The Future of Nachos
 
-The nacho has already survived one kind of challenge: constant reinvention. What comes next? 
+The nacho has already survived one kind of challenge: constant reinvention. What comes next?
 
 Some restaurants have tried to elevate nachos to fine dining—truffled cheese, exotic meats, artisanal chips. Some have tried to make them health-conscious—cauliflower chips, dairy-free cheese. Some have pushed them into fusion territories—Korean nachos, Indian nachos, Thai nachos.
 
@@ -87,4 +91,3 @@ But every time, the original simplicity—chips, cheese, jalapeños—calls us b
 ---
 
 **Further exploration:** Search for regional variations in your area. Try making them at home with different cheeses. Ask older family members where they first encountered nachos. The history of food is the history of where it went, not just where it came from.
-

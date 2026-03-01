@@ -14,21 +14,23 @@ This isn't accident. Understanding tamales means understanding how food becomes 
 
 ## Ancient Origins: Food for Warriors
 
-{% include images/figure.html
-class="right"
-width="48%"
-caption="Archaeological evidence suggests tamales were prepared by Aztec armies as portable, high-energy food for long campaigns."
-image-path="images/figure_1.jpg"
-%}
-
+{% capture tamales_origins_text %}
 The Aztecs called them *tamalli*—and they were revolutionary. Before tamales, portable food was limited. But a tamale—masa dough wrapped in corn husks, filled with meat or chile—was lightweight, calorie-dense, and kept well during travel.
 
 Armies marched with tamales. The Aztec military campaigns depended partly on tamales as rations. Merchants traveling trade routes carried them. Women prepared them in large batches before hunts or expeditions, treating the work as part of military preparation.
 
 This origin matters: tamales began as *functional* food, created to solve a practical problem. But function evolved into meaning.
+{% endcapture %}
 
-{% include typography/aside.html class="left" text="
-\"What's remarkable about tamales is that the basic recipe and preparation method have changed very little in 500 years. You're eating, almost exactly, what Aztec warriors ate before battle.\"" %}
+{% include images/figure-wrap.html
+  image-path="images/figure_1.jpg"
+  image-position="right"
+  image-width="48%"
+  caption="Archaeological evidence suggests tamales were prepared by Aztec armies as portable, high-energy food for long campaigns."
+  text=tamales_origins_text
+%}
+
+{% include typography/pullquote.html text="\"What's remarkable about tamales is that the basic recipe and preparation method have changed very little in 500 years. You're eating, almost exactly, what Aztec warriors ate before battle.\"" %}
 
 When Spanish colonizers arrived, they found tamales already so established that they were impossible to dislodge. Unlike some indigenous foods that were suppressed or transformed beyond recognition, tamales persisted. They adapted to new ingredients (wheat flour, pork from Spanish livestock), but the core remained.
 
@@ -41,14 +43,17 @@ Tamale preparation is traditionally women's work—mothers, grandmothers, sister
 
 But this exhaustion is part of the meaning. The labor *is* the gift. A batch of homemade tamales represents hours of work from multiple people. You cannot replicate this in a factory or store.
 
-{% include images/figure.html
-class="left"
-width="45%"
-caption="Traditional tamale preparation involves spreading masa on corn husks—a skill passed down through families and requiring practice to master."
-image-path="images/carousel_1.jpg"
-%}
-
+{% capture tamales_labor_text %}
 This is why store-bought tamales, while sometimes necessary, occupy a completely different cultural space. They're food when you need food. Homemade tamales are *love made edible*.
+{% endcapture %}
+
+{% include images/figure-wrap.html
+  image-path="images/carousel_1.jpg"
+  image-position="left"
+  image-width="45%"
+  caption="Traditional tamale preparation involves spreading masa on corn husks—a skill passed down through families and requiring practice to master."
+  text=tamales_labor_text
+%}
 
 
 ## Regional Variations: Stories in Every Style
@@ -67,8 +72,7 @@ The beauty of tamales is their flexibility. Different regions have completely di
 
 Each reflects local ingredients, local tastes, local history. A tamale tells you where it's from.
 
-{% include typography/aside.html class="right" text="
-\"The most important thing about tamales isn't the recipe. It's the hands that made them. Whose recipe? Whose tradition? Whose labor? These are the questions that matter.\"" %}
+{% include typography/pullquote.html text="\"The most important thing about tamales isn't the recipe. It's the hands that made them. Whose recipe? Whose tradition? Whose labor? These are the questions that matter.\"" %}
 
 
 ## The Calendar of Tamales

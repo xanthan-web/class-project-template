@@ -14,19 +14,21 @@ The story of how this plant became the defining ingredient of Southwestern cuisi
 
 ## Wild Origins and Sacred Uses
 
-{% include images/figure.html
-class="left"
-width="48%"
-caption="Archaeological evidence suggests chile domestication began around 7500 BCE in Mexico—making it one of the oldest cultivated crops in the Americas."
-image-path="images/figure_1.jpg"
-%}
-
+{% capture chile_origins_text %}
 Archaeological evidence suggests that wild chiles were used by Mesoamerican peoples for thousands of years before domestication. Unlike staple crops like maize or beans (which were also domesticated), chiles were initially valued for medicinal and ceremonial purposes, not just food.
 
 The Aztecs called them *chilli*—a word that would travel the world. They appeared in codices as sacred plants, used in rituals and as offerings. But they were also used in cooking, in medicine, as currency. Chiles were woven into the economic and spiritual fabric of pre-Columbian civilizations.
+{% endcapture %}
 
-{% include typography/aside.html class="right" text="
-\"When Spanish conquistadors arrived and encountered chiles for the first time, they didn't know what they'd found: the key ingredient that would reshape global cuisine. They just tasted heat and assumed they were finding something like black pepper.\"" %}
+{% include images/figure-wrap.html
+  image-path="images/figure_1.jpg"
+  image-position="left"
+  image-width="48%"
+  caption="Archaeological evidence suggests chile domestication began around 7500 BCE in Mexico—making it one of the oldest cultivated crops in the Americas."
+  text=chile_origins_text
+%}
+
+{% include typography/pullquote.html text="\"When Spanish conquistadors arrived and encountered chiles for the first time, they didn't know what they'd found: the key ingredient that would reshape global cuisine. They just tasted heat and assumed they were finding something like black pepper.\"" %}
 
 When Spanish conquistadors arrived in the 16th century, they encountered chiles and assumed they were a kind of pepper—similar to the peppercorns that had driven medieval trade routes and wars. This mistake—this linguistic confusion—would matter enormously.
 
@@ -42,24 +44,26 @@ The Southwest, however, kept them close. When Spanish settlers began colonizing 
 
 ## The New Mexican Obsession
 
-{% include images/figure.html
-class="right"
-width="45%"
-caption="The iconic red chile ristras of Northern New Mexico—strands of dried chiles hung to cure and age."
-image-path="images/carousel_1.jpg"
-%}
-
+{% capture chile_nm_text %}
 By the 18th and 19th centuries, chiles were so central to New Mexican cuisine that they weren't just a spice—they were an identity marker. You could tell where someone was from by how they prepared chiles, what variety they grew, when they harvested.
 
 Red versus green became almost a political and cultural statement. Families had chile-growing traditions stretching back generations. Towns developed reputations for particular varieties. The annual chile harvest was (and still is) treated with ceremonial importance.
 
 When New Mexico became a U.S. state in 1912, one of its first instincts was to assert its uniqueness through food. Chile festivals emerged. Chile-growing competitions began. The chile became a symbol of regional pride—fiercer and more protective than almost any other ingredient anywhere.
+{% endcapture %}
+
+{% include images/figure-wrap.html
+  image-path="images/carousel_1.jpg"
+  image-position="right"
+  image-width="45%"
+  caption="The iconic red chile ristras of Northern New Mexico—strands of dried chiles hung to cure and age."
+  text=chile_nm_text
+%}
 
 
 ## The Chemistry of Heat and Culture
 
-{% include typography/aside.html class="left" text="
-\"The heat of a chile isn't just a flavor sensation. It's a physical experience that changes how we perceive food, how we gather, how we bond. Sharing hot food creates a kind of intimacy that bland food never could.\"" %}
+{% include typography/pullquote.html text="\"The heat of a chile isn't just a flavor sensation. It's a physical experience that changes how we perceive food, how we gather, how we bond. Sharing hot food creates a kind of intimacy that bland food never could.\"" %}
 
 What makes chiles remarkable isn't just their flavor, but their heat—the capsaicin that creates that burning sensation. This isn't taste in the traditional sense; it's pain. We've evolved to eat chiles despite the pain, even to crave it.
 

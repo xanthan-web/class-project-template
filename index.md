@@ -1,32 +1,24 @@
 ---
-title: "Southwest Snack Histories"
+title: "Class Project Template"
 layout: base
 date: 2025-10-21
+header-image: "/assets/images/sw-table.jpg"
+header-title: Tex-mex magic
+header-position: 35% center
 ---
 
-{% include images/jumbotron.html
-  height="50vh"
-  image-path="/assets/images/1920s-banner-3.png"
-  title=""
-%}
+# Your Class Project Name Goes Here
 
-# 🌶️ Welcome to the Great Southwest Snack-Off
+This is your class project site, built with the [Xanthan framework](https://xanthan-web.github.io/xanthan/). Everything you see here is a placeholder — the title above, the essay topics, the images. Your course topic and your students' writing go here.
 
-{% include images/figure.html
-  class="right"
-  width="33%"
-  caption="Field researchers testing nacho stability (for science)."
-  image-path="/assets/images/duke-ellington-nyc.jpg"
-  source-url="https://commons.wikimedia.org/wiki/File:Xanthan.svg"
-%}
+To get a sense of what a finished project can look like, this template includes three sample essays on Southwest food history, generated with AI as stand-ins for real student work. Browse them to see how essays can use images, pull quotes, and scroll-driven backgrounds. Then start replacing them with your own material.
 
-This semester’s class project asked students to **trace the hidden histories of Southwest foods**—and to use every storytelling gadget in the Xanthan toolbox. The result? Three scroll-friendly essays that double as demos for figures, pull quotes, scrolly backgrounds, and carousels.
+**Ready to begin?** Open `index.md` in your editor and change the title and this introduction. That's your first edit. The [documentation](docs/) covers everything else — how to add pages, configure navigation, set up student contributors, and customize the look.
 
-What you’ll find:
-- Nachos: the 1943 border-café improvisation that became America’s most democratic snack
-- Chiles: how a Mesoamerican plant became the badge of Southwestern identity (heat, pride, and capsaicin chemistry)
-- Tamales: communal labor, ritual calendars, and why wrapped food still feels sacred
+The card grid below links to the sample essays. You'll replace these with your students' work as the project develops.
 
-**Steal this project for your class:** swap in your own topic, keep the layouts, and let students focus on research, writing, and playful presentation. Everything below is editable; the card grid links directly into the essays.
+{% assign all_pages = site.pages %}
+{% assign cards = all_pages | where_exp: "p", "p.path contains 'essays/'" | where_exp: "p", "p.path != 'essays/index.md'" %}
 
-<br style="clear: both">
+{% include nav/card-grid.html cards=cards %}
+
