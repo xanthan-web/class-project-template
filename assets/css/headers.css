@@ -128,14 +128,36 @@ Font families inherit from base.css variables.
   text-transform: uppercase;
 }
 
+<<<<<<< Updated upstream
 .page-header p {
   font-size: 1.15rem;
   color: rgba(255,255,255,0.45);
   line-height: 1.75;
   font-weight: 300;
   letter-spacing: 0.06em;
+=======
+.header-studio .header-studio-subtitle {
+  font-size: clamp(1.3rem, 1.7vw, 1.6rem);
+  color: rgba(255,255,255,0.88);
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.015em;
+>>>>>>> Stashed changes
   margin-bottom: 0;
   max-width: 540px;
+}
+
+.header-studio--hero .header-studio-content .header-studio-subtitle {
+  display: inline-block;
+  max-width: min(62ch, 92%);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.7),
+    0 3px 14px rgba(0, 0, 0, 0.45);
 }
 
 /* Reduce gap between header and first content heading */
