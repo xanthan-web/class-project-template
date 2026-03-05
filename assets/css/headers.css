@@ -95,7 +95,7 @@ Font families inherit from base.css variables.
 
 .page-header h1 {
   font-family: var(--font-serif) !important;
-  font-size: clamp(4.8rem, 10.8vw, 7.8rem) !important;
+  font-size: clamp(3.8rem, 8.6vw, 6.2rem) !important;
   font-weight: 400 !important;
   color: white !important;
   line-height: 1.0;
