@@ -5,6 +5,29 @@ layout: base
 
 # Getting Started with Your Class Project Site
 
+<style>
+/* Page-specific rhythm tuning for long instructional content */
+h2 {
+   margin-top: 1.6rem;
+   margin-bottom: 0.6rem;
+}
+
+h3 {
+   margin-top: 1.1rem;
+   margin-bottom: 0.4rem;
+}
+
+p,
+ul,
+ol {
+   margin-bottom: 1rem;
+}
+
+hr {
+   margin: 1rem 0;
+}
+</style>
+
 **Welcome!** This page guides you through setting up your own project folder in this class project template. Once you've created your folder and added your first page, **you can delete this file**—it's just here to help you get started.
 
 ## What You Have
