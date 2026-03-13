@@ -19,7 +19,7 @@ summary: Documentation for your Xanthan site, matched to the code in this reposi
 
 # Documentation
 
-This documentation is bundled with your site and matches the version of Xanthan code you're running. 
+This documentation is bundled with your site and matches the version of Xanthan code you're running. For the latest updates, visit [xanthan-web.github.io/xanthan](https://xanthan-web.github.io/xanthan/).
 
 ---
 
