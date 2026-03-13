@@ -44,7 +44,7 @@ PAGE SETUP & CUSTOMIZATION
   --bg-card: var(--warm-light);
   --bg-accent: var(--golden-wash);
   --bg-code: var(--sage-pale);
-  --bg-nav: var(--sage-deep);
+  --bg-nav: var(--sage);
 
   /* Text */
   --text-body: var(--sage-dark);
@@ -238,7 +238,9 @@ JUMBOTRON
   padding: var(--spacing-lg);
 
   /* Typography */
+  font-family: var(--font-body);
   color: var(--text-body);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Center mode: text overlays the image directly — use shadow for legibility */
@@ -266,7 +268,7 @@ JUMBOTRON
 
 .jumbotron-text {
   /* Typography */
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
@@ -349,10 +351,10 @@ figcaption p {
   /* Box Model */
   margin: 0;
   padding: 0;
-  
+
   /* Typography */
   font-size: 0.8rem;
-  line-height: 1rem !important;
+  line-height: 1rem;
 }
 
 figcaption a {
@@ -414,55 +416,53 @@ FIGURE WRAP — two-column image + text layout
 
 /*****************************************************
 IMAGE CAROUSEL
+Uses Splide.js — see _includes/images/carousel.html
 *****************************************************/
 
-.carousel {
-  /* Display */
-  overflow: hidden;
-
-  /* Box Model */
-  width: 100%;
-  max-width: 800px;
-  height: 400px;
-  margin: 0 auto;
-
+/* Carousel wrapper — height is set via fixedHeight in Splide options */
+.xanthan-carousel {
   /* Visual */
-  background: var(--bg-card);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
 }
 
-.carousel-item img {
+/* Figure fills the full slide height */
+.xanthan-carousel__slide {
+  /* Display */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  /* Box Model */
+  margin: 0;
+}
+
+/* Image fills the slide, cropping as needed */
+.xanthan-carousel__slide img {
   /* Display */
   display: block;
+  flex: 1;
 
   /* Box Model */
-  width: auto;
-  height: auto;
-  max-height: 400px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 0;
+
+  /* Visual */
+  object-fit: cover;
+}
+
+/* Figcaption — appears below the image */
+.xanthan-carousel__slide figcaption {
+  /* Box Model */
+  padding: var(--spacing-sm) var(--spacing-md);
+  flex-shrink: 0;
 
   /* Visual */
   background: var(--bg-card);
-  object-fit: contain;
-}
 
-p.carousel-caption {
-  /* Positioning */
-  position: relative;
-  z-index: 2;
-  
-  /* Box Model */
-  width: 100%;
-  margin: 0.5rem 0 0 var(--spacing-lg);
-  padding: 0;
-  border: 0;
-  
   /* Typography */
-  font-family: var(--font-body);
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  text-align: left;
-  text-shadow: none;
+  font-size: 0.875rem;
+  line-height: 1.5;
   color: var(--text-muted);
 }
 
@@ -598,12 +598,12 @@ BUTTONS
   /* Typography */
   font-family: var(--font-body);
   font-size: 1.2em;
-  color: var(--white) !important;
-  text-decoration: none !important;
+  color: var(--white);
+  text-decoration: none;
 
   /* Visual */
   background: var(--accent-primary);
-  border: none !important;
+  border: none;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
 
@@ -611,9 +611,21 @@ BUTTONS
   transition: background-color var(--transition-normal), transform var(--transition-fast), box-shadow var(--transition-normal);
 }
 
-.btn-primary:hover {
+/*
+  Override a:visited and a:visited:hover from typography.css (loads after base.css).
+  :visited raises specificity to 0,2,0 — enough to beat a:visited (0,1,0).
+  :visited:hover raises to 0,3,0 — enough to beat a:visited:hover (0,2,1).
+*/
+.btn-primary:visited {
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:visited:hover {
   /* Typography */
-  color: var(--white) !important;
+  color: var(--white);
 
   /* Visual */
   background: var(--interactive-hover);
@@ -645,12 +657,12 @@ BUTTONS
   /* Typography */
   font-family: var(--font-body);
   font-size: 0.95em;
-  color: var(--white) !important;
-  text-decoration: none !important;
+  color: var(--white);
+  text-decoration: none;
 
   /* Visual */
   background: var(--accent-primary);
-  border: none !important;
+  border: none;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 
@@ -658,9 +670,16 @@ BUTTONS
   transition: background-color var(--transition-normal), transform var(--transition-fast), box-shadow var(--transition-normal);
 }
 
-.btn-secondary:hover {
+.btn-secondary:visited {
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+}
+
+.btn-secondary:hover,
+.btn-secondary:visited:hover {
   /* Typography */
-  color: var(--white) !important;
+  color: var(--white);
 
   /* Visual */
   background: var(--interactive-hover);

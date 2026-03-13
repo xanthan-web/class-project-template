@@ -25,6 +25,7 @@
         bg-opacity  = page.header-opacity
         zoom        = page.header-zoom
         height      = page.header-height
+        caption     = page.header-caption
       %}
 
     {% endif %}
@@ -40,6 +41,8 @@
     </div> <!-- /container -->
 
     {% include layout/footer.html %}
+
+    {% include nav/search.html %}
 
     </div> <!-- /page-wrap -->
 
