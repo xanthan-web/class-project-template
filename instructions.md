@@ -28,7 +28,7 @@ hr {
 }
 </style>
 
-**Welcome!** This page guides you through setting up your own project folder in this class project template. Once you've created your folder and added your first page, **you can delete this file**—it's just here to help you get started.
+This page guides you through setting up your own project folder in this class project template. Once you've created your folder and added your first page, **you can delete this file**—it's just here to help you get started.
 
 ## What You Have
 
@@ -57,15 +57,15 @@ Your project needs its own folder. Here's how:
 
 1. In the VS Code sidebar, find the `essays/` folder
 2. Right-click on `essays/` and select **"New Folder"**
-3. Name your folder using **snake_case** (lowercase with underscores, no spaces)
-   - ✅ Good examples: `great_fermentation_debate`, `pigeon_conspiracy`, `hot_dog_sandwich`
-   - ❌ Bad examples: `Great Fermentation Debate` (spaces), `GreatFermentationDebate` (no underscores)
+3. Name your folder using **kebab-case** (lowercase with hyphens, no spaces)
+   - ✅ Good examples: `great-fermentation-debate`, `pigeon-conspiracy`, `hot-dog-sandwich`
+   - ❌ Bad examples: `Great Fermentation Debate` (spaces), `great_fermentation_debate` (underscores)
 4. Press Enter to create the folder
 
 **What your folder structure will look like:**
 ```
 essays/
-├── your_project_name/
+├── your-project-name/
 │   ├── images/           (create this next)
 │   └── index.md          (create this next)
 ```
@@ -75,7 +75,7 @@ essays/
 
 Inside your new project folder, you need a folder for images:
 
-1. Right-click on your new folder (e.g., `your_project_name/`)
+1. Right-click on your new folder (e.g., `your-project-name/`)
 2. Select **"New Folder"**
 3. Name it `images`
 4. Press Enter
@@ -123,7 +123,7 @@ Below the `---` lines, replace the sample content with your own writing, analysi
 2. Select **"Upload..."** and choose image files from your computer
 3. Once uploaded, you can reference them in your `index.md` file with:
    ```markdown
-   ![description]({{ site.baseurl }}/essays/your_project_name/images/image-name.jpg)
+   ![description]({{ site.baseurl }}/essays/your-project-name/images/image-name.jpg)
    ```
 
 **Image naming tips:**
@@ -177,6 +177,25 @@ You don't need to know HTML! Just use simple **markdown** formatting:
 **Tip:** Look at the sample pages in the `essays/` folder to see examples of markdown you can copy!
 
 
+## Using AI to Write and Format Your Essay
+
+You don't need to memorize markdown syntax or figure out image tags on your own. AI assistants like Claude or ChatGPT work well with Xanthan because the framework uses named, documented components.
+
+**A useful starter prompt:**
+
+> "I'm working on a class project essay using the Xanthan Jekyll framework. My essay is in `essays/my-project-name/index.md`. Here's the file: [paste your index.md]. I want to add an image on the right side of the text with a caption. The image is at `images/my-photo.jpg`. Can you show me the Xanthan include tag for that?"
+
+Other things AI handles well:
+- Drafting or editing your essay text
+- Formatting a bibliography in a consistent style
+- Fixing broken markdown (paste the problem section and ask what's wrong)
+- Explaining what any front matter field or component parameter does
+
+You can also paste your whole essay and ask: "Does this markdown look correct? Are there any formatting issues?"
+
+Start small—ask AI to help with one thing at a time—and you'll build confidence quickly.
+
+
 ## Need Help?
 
 ### Ask Your Instructor
@@ -196,15 +215,13 @@ You can ask AI assistants like Claude or ChatGPT:
 - "Can you write this text in markdown format?"
 
 
-### Check the Xanthan Docs
+### Check your included Docs
 
 For more advanced features:
 - Browse the `/docs/` folder in your repository
-- Visit [xanthan-web.github.io/xanthan/docs/](https://xanthan-web.github.io/xanthan/docs/)
 
 
 ## When You're Ready to Clean Up
-
 Once you understand how to edit your site and you're happy with your project:
 
 1. **Delete this file** (`instructions.md`)
@@ -215,5 +232,4 @@ Once you understand how to edit your site and you're happy with your project:
 
 ---
 
-{: .text-center .text-muted}
 **Questions?** Ask your instructor or check the [Xanthan documentation](https://xanthan-web.github.io/xanthan/).
