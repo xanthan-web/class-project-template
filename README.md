@@ -33,7 +33,7 @@ The homepage card grid is driven by a Liquid query over all pages under `essays/
 
 ```liquid
 {% assign cards = site.pages | where_exp: "p", "p.path contains 'essays/'" %}
-{% include nav/card-grid.html cards=cards %}
+{% include cards/card-grid.html cards=cards %}
 ```
 
 Card content (title, thumbnail, summary) comes from each essay's front matter.

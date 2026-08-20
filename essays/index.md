@@ -13,4 +13,4 @@ Browse them to get a feel for the format. When you're ready to build your own pr
 {% assign all_pages = site.pages %}
 {% assign cards = all_pages | where_exp: "p", "p.path contains 'essays/'" | where_exp: "p", "p.path != 'essays/index.md'" %}
 
-{% include nav/card-grid.html cards=cards %}
+{% include cards/card-grid.html cards=cards %}
